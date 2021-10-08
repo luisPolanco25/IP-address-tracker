@@ -1,0 +1,29 @@
+:root {
+    /* Colors */
+    --very-dark-gray: hsl(0, 0%, 17%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+
+    /* Font */
+    --rubik: 'Rubik', sans-serif;
+    --light: 400;
+    --regular: 500;
+    --bold: 700;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: var(--rubik);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
