@@ -8,7 +8,7 @@ export const Input = () => {
     const {geoLocation, setGeoLocation} = useContext( IpAddressContext );
     const {ip} = geoLocation;
     
-    const [ipAddress, setIpAddress] = useState( ip );
+    const [ipAddress, setIpAddress] = useState( '' );
 
     const handleInputChange = ({target}) => {
         setIpAddress(target.value);
