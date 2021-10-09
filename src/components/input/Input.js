@@ -25,7 +25,7 @@ export const Input = () => {
 
     return (
         <div id="background">
-            <h1>IP Address Tracker</h1>
+            <h1 id="title">IP Address Tracker</h1>
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
@@ -36,7 +36,7 @@ export const Input = () => {
                     onChange={handleInputChange}
                 />
 
-                <button type="submit">
+                <button type="submit" aria-labelledby="title">
                     <img src={arrow} alt="" />
                 </button>
 
