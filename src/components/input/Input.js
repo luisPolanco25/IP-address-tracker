@@ -1,13 +1,14 @@
 import React, { useContext, useState } from 'react'
 import { locationApi } from '../../helpers/location-api'
 import { IpAddressContext } from '../context/IpAddressContext';
+import arrow from '../../assets/icon-arrow.svg';
 
 export const Input = () => {
 
-    const {geoLocation, setGeoLocation} = useContext(IpAddressContext);
+    const {geoLocation, setGeoLocation} = useContext( IpAddressContext );
     const {ip} = geoLocation;
     
-    const [ipAddress, setIpAddress] = useState(ip);
+    const [ipAddress, setIpAddress] = useState( ip );
 
     const handleInputChange = ({target}) => {
         setIpAddress(target.value);
@@ -34,6 +35,10 @@ export const Input = () => {
                     value={ipAddress}
                     onChange={handleInputChange}
                 />
+
+                <button type="submit">
+                    <img src={arrow} alt="" />
+                </button>
 
             </form>
         </div>

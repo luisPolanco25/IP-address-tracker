@@ -27,7 +27,7 @@ const LocationMarker = ({latLng}) => {
   }
   
 
-export const Map = ({lat, lng}) => {
+export const Map = ({lat = 43.73414415941826, lng = 7.416179362673161}) => {
 
     const position = [lat, lng]
 

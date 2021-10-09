@@ -17,7 +17,7 @@ export const Textbox = () => {
         (
             <div id="text-box">
                 <h2>Error</h2>
-                <p>This is not a valid IP Address</p>
+                <p style={{color: 'red'}}>This is not a valid IP Address</p>
             </div>
         )
 
