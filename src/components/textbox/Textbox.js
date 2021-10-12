@@ -15,9 +15,13 @@ export const Textbox = () => {
         ?
 
         (
-            <div id="text-box">
-                <h2>Error</h2>
-                <p style={{color: 'red'}}>This is not a valid IP Address</p>
+            <div id="text-box" style={{justifyContent: 'center', alignItems: 'center'}}>
+                
+                <div style={{justifyContent: 'center', alignItems: 'center'}}>
+                    <h2>Error</h2>
+                    <p style={{color: 'red'}}>This is not a valid IP Address</p>
+                </div>
+
             </div>
         )
 

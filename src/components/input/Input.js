@@ -5,8 +5,7 @@ import arrow from '../../assets/icon-arrow.svg';
 
 export const Input = () => {
 
-    const {geoLocation, setGeoLocation} = useContext( IpAddressContext );
-    const {ip} = geoLocation;
+    const { setGeoLocation } = useContext( IpAddressContext );
     
     const [ipAddress, setIpAddress] = useState( '' );
 
